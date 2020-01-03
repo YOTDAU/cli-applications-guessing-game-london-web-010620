@@ -5,14 +5,9 @@ def guessing_CLI
   if user_input == num 
     return "You guessed the correct number!"
   elsif user_input !== num 
-    return 
-  
-  
-  
-  
-  
-  context 'user inputs' do
-    it "responds to 'exit'" do
-      expect(self).to receive(:gets).and_return('exit')
-      expect { run_guessing_game }.to output(/Goodbye!/).to_stdout
-    end
+    return "Sorry! The computer guessed #{num}."
+  else
+    user_input == "exit"
+    return "Goodbye!"
+  end
+end
