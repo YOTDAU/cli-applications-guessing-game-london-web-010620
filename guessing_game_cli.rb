@@ -1,5 +1,5 @@
 # Code your solution here!
-def guessing_CLI
+def run_guessing_game
   num = rand(6)+1
   user_input = gets.chomp.to_s
   if user_input == num 
