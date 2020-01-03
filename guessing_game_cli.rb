@@ -5,5 +5,7 @@ def run_guessing_game
   
   if user_input == "exit"
     puts "Goodbye!"
+  elsif user_input == num
+  puts 
   end
 end
